@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "b2a1872f-6e1d-4d36-a4c0-5a3b490138ac",
+		"name": "NestJS-Rest-Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllReports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/report/income",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"report",
+						"income"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getReportByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/report/income/uuid1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"report",
+						"income",
+						"uuid1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createReport",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"source\": true,\n    \"amount\": {\"test\": \"str\"}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/report/expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"report",
+						"expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateReport",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"source\": \"Udemy Updated\",\n    \"amount\": \"1100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/report/income/5407c361-e820-4b07-b483-910f26ab37b1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"report",
+						"income",
+						"5407c361-e820-4b07-b483-910f26ab37b1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteReport",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/report/income/05a876b9-12ca-4595-aad7-50917eb80f2f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"report",
+						"income",
+						"05a876b9-12ca-4595-aad7-50917eb80f2f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSummary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"summary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
